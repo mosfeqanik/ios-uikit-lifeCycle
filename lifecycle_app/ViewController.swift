@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var  label:UILabel!
+    @IBOutlet var button: UIButton!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,6 +23,9 @@ class ViewController: UIViewController {
         self.label.text = "welcome to iOS"
     }
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+           self.label.text = "welcome to iOS development batch"
+       }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
